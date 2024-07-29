@@ -66,10 +66,13 @@ public class MainController {
         return "redirect:/GetShoppings";
     }
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public String login() {
         return "accounts/login";
     }
 
-
+    @GetMapping("/aboutUs")
+    public String aboutUsView() {
+        return "accounts/login";
+    }
 }
