@@ -65,4 +65,11 @@ public class MainController {
         User save = userRepository.save(user);
         return "redirect:/GetShoppings";
     }
+
+    @PostMapping("/login")
+    public String login() {
+        return "accounts/login";
+    }
+
+
 }
